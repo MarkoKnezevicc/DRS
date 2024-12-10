@@ -85,78 +85,94 @@ const Register = () => {
   return (
     <div className="form">
       <form onSubmit={onSubmit}>
-        <label className="label">First Name</label>
-        <input
-          type="text"
-          name="firstName"
-          value={formData.firstName}
-          onChange={onChange}
-          className="input"
-        />
-
-        <label className="label">Last Name</label>
-        <input
-          type="text"
-          name="lastName"
-          value={formData.lastName}
-          onChange={onChange}
-          className="input"
-        />
-
-        <label className="label">Email</label>
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={onChange}
-          className="input"
-        />
-
-        <label className="label">Password</label>
-        <input
-          type="password"
-          name="password"
-          value={formData.password}
-          onChange={onChange}
-          className="input"
-        />
-
-        <label className="label">Address</label>
-        <input
-          type="text"
-          name="address"
-          value={formData.address}
-          onChange={onChange}
-          className="input"
-        />
-
-        <label className="label">City</label>
-        <input
-          type="text"
-          name="city"
-          value={formData.city}
-          onChange={onChange}
-          className="input"
-        />
-
-        <label className="label">Country</label>
-        <input
-          type="text"
-          name="country"
-          value={formData.country}
-          onChange={onChange}
-          className="input"
-        />
-
-        <label className="label">Phone Number</label>
-        <input
-          type="text"
-          name="phone"
-          value={formData.phone}
-          onChange={onChange}
-          className="input"
-        />
-
+        <div className="row">
+          <div className="group">
+            <label className="label">First Name</label>
+            <input
+              type="text"
+              name="firstName"
+              value={formData.firstName}
+              onChange={onChange}
+              className="input"
+            />
+          </div>
+          <div className="group">
+            <label className="label">Last Name</label>
+            <input
+              type="text"
+              name="lastName"
+              value={formData.lastName}
+              onChange={onChange}
+              className="input"
+            />
+          </div>
+        </div>
+        <div className="row">
+          <div className="group">
+            <label className="label">Email</label>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={onChange}
+              className="input"
+            />
+          </div>
+          <div className="group">
+            <label className="label">Password</label>
+            <input
+              type="password"
+              name="password"
+              value={formData.password}
+              onChange={onChange}
+              className="input"
+            />
+          </div>
+        </div>
+        <div className="row">
+          <div className="group">
+            <label className="label">Address</label>
+            <input
+              type="text"
+              name="address"
+              value={formData.address}
+              onChange={onChange}
+              className="input"
+            />
+          </div>
+          <div className="group">
+            <label className="label">City</label>
+            <input
+              type="text"
+              name="city"
+              value={formData.city}
+              onChange={onChange}
+              className="input"
+            />
+          </div>
+        </div>
+        <div className="row">
+          <div className="group">
+            <label className="label">Country</label>
+            <input
+              type="text"
+              name="country"
+              value={formData.country}
+              onChange={onChange}
+              className="input"
+            />
+          </div>
+          <div className="group">
+            <label className="label">Phone Number</label>
+            <input
+              type="text"
+              name="phone"
+              value={formData.phone}
+              onChange={onChange}
+              className="input"
+            />
+          </div>
+        </div>
         <button type="submit" className="subBtn">
           Register
         </button>

@@ -23,33 +23,31 @@ function Header() {
     <>
       <Navbar className="custom-navbar" expand="md">
         <Container>
-          <Navbar.Brand as={Link} to="/">
+          <Navbar.Brand className="navbar-text" as={Link} to="/">
             Portfolio Project
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link as={Link} to="/">
-                Home
-              </Nav.Link>
-            </Nav>
+            <Nav className="me-auto"></Nav>
             <Nav>
               {user ? (
                 <>
-                  <Nav.Link as={Link} to="/portfolio">
+                  <Nav.Link as={Link} className="navbar-text" to="/portfolio">
                     Portfolio
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/profile">
+                  <Nav.Link as={Link} className="navbar-text" to="/profile">
                     Profile
                   </Nav.Link>
-                  <Nav.Link onClick={onLogout}>Logout</Nav.Link>
+                  <Nav.Link className="navbar-text" onClick={onLogout}>
+                    Logout
+                  </Nav.Link>
                 </>
               ) : (
                 <>
-                  <Nav.Link as={Link} to="/login">
+                  <Nav.Link className="navbar-text" as={Link} to="/login">
                     Login
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/register">
+                  <Nav.Link className="navbar-text" as={Link} to="/register">
                     Register
                   </Nav.Link>
                 </>

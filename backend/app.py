@@ -12,7 +12,6 @@ password = "demo"  # Replace with your actual password
 cluster_name = "cluster0"
 db_name = "Portfolio"  # Replace with your actual database name
 
-#connect(host="mongodb+srv://cluster0.kqej46w.mongodb.net", db="Portfolio", username="portfolio123", password="portfolio123")
 uri = f"mongodb+srv://{username}:{password}@{cluster_name}.byca7.mongodb.net/{db_name}?retryWrites=true&w=majority&appName=Cluster0"
 
 connect(host=uri)
